@@ -1,0 +1,210 @@
+.app-shell {
+  width: min(760px, 92vw);
+  margin: 2rem auto;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+.app-shell h1 {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #d8dee9;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgba(11, 22, 44, 0.08);
+}
+
+.auth-panel,
+.chat-panel {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.mode-switch {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.mode-switch button.active {
+  background: #0f4c81;
+  color: #ffffff;
+}
+
+.form-grid {
+  display: grid;
+  gap: 0.7rem;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+}
+
+input,
+button {
+  font: inherit;
+  border-radius: 8px;
+  border: 1px solid #b7c3d1;
+  padding: 0.6rem 0.7rem;
+}
+
+button {
+  cursor: pointer;
+  background: #e8eff7;
+  color: #182032;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chat-header p {
+  margin: 0;
+}
+
+.chat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.sub-panel {
+  border: 1px solid #d6deea;
+  border-radius: 10px;
+  padding: 0.7rem;
+  background: #fcfdff;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.messages-box {
+  min-height: 220px;
+  max-height: 360px;
+  overflow-y: auto;
+  border: 1px solid #d6deea;
+  border-radius: 10px;
+  padding: 0.7rem;
+  display: grid;
+  gap: 0.5rem;
+  background: #f6f8fb;
+}
+
+.message-item {
+  max-width: 70%;
+  border-radius: 10px;
+  padding: 0.55rem 0.65rem;
+}
+
+.message-item p {
+  margin: 0;
+}
+
+.message-item small {
+  font-size: 0.75rem;
+  color: #4c5e73;
+}
+
+.message-item.mine {
+  justify-self: end;
+  background: #d7ecff;
+}
+
+.message-item.theirs {
+  justify-self: start;
+  background: #fff1d9;
+}
+
+.send-row {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.send-row input {
+  flex: 1;
+}
+
+.channel-list {
+  display: grid;
+  gap: 0.4rem;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.presence-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.presence-card {
+  border: 1px solid #d6deea;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: #f7faff;
+}
+
+.presence-list {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.presence-list li {
+  margin: 0.2rem 0;
+}
+
+.channel-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+}
+
+.channel-item.active {
+  border-color: #0f4c81;
+  background: #dbeeff;
+}
+
+.status-text {
+  margin: 0.8rem 0 0;
+  color: #a1132e;
+}
+
+.status-text.hint {
+  color: #3f4c61;
+}
+
+.muted {
+  margin: 0;
+  color: #5c6b7d;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    margin: 1rem auto;
+  }
+
+  .chat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .presence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .message-item {
+    max-width: 88%;
+  }
+}

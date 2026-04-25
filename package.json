@@ -1,0 +1,18 @@
+{
+  "name": "project",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "preinstall": "cd server && npm install && cd ../socket-server && npm install && cd ../presence-service && npm install && cd ../client/client && npm install",
+    "dev:client": "cd client/client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "dev:socket": "cd socket-server && npm run dev",
+    "dev:presence": "cd presence-service && npm run dev",
+    "dev:all": "concurrently \"npm run dev:server\" \"npm run dev:socket\" \"npm run dev:presence\" \"npm run dev:client\"",
+    "build": "cd client/client && npm run build",
+    "start": "concurrently \"cd server && npm start\" \"cd socket-server && npm start\" \"cd presence-service && npm start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
