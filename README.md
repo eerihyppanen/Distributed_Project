@@ -15,6 +15,8 @@ From the project root:
 
 npm install
 
+In `server/`, copy `.env.example` to `.env` and replace the placeholder secret.
+
 ## Run everything with one command
 From the project root:
 

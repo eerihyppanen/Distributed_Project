@@ -1,1 +1,0 @@
-{"version":3,"file":"ChannelMessage.d.ts","sourceRoot":"","sources":["../../models/ChannelMessage.ts"],"names":[],"mappings":"AAAA,OAAO,EAAiB,QAAQ,EAAE,KAAK,EAAE,MAAM,UAAU,CAAA;AAEzD,MAAM,WAAW,eAAgB,SAAQ,QAAQ;IAC/C,MAAM,EAAE,KAAK,CAAC,QAAQ,CAAA;IACtB,OAAO,EAAE,KAAK,CAAC,QAAQ,CAAA;IACvB,OAAO,EAAE,MAAM,CAAA;IACf,SAAS,EAAE,IAAI,CAAA;CAChB;AAaD,eAAO,MAAM,cAAc;;;;;;wBAAiE,CAAA"}
